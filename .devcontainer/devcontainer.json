@@ -1,0 +1,12 @@
+{
+  "name": "Ubuntu with Docker",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "docker-in-docker": {
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y docker-compose",
+  "remoteUser": "vscode"
+}
+
